@@ -181,8 +181,7 @@ public class MediaFinal {
 						// nomeDisc += disciplina.getDisciplina() + "\n";
 
 						saida.append("\n----------------------------" + "\nDisciplina: " + disciplina.getDisciplina()
-								+ disciplina.imprimindoNotas() + disciplina.maiorNota()
-								+ "\n----------------------------");
+								+ disciplina.imprimindoNotas() + disciplina.maiorNota() + disciplina.menorNota());
 
 					}
 

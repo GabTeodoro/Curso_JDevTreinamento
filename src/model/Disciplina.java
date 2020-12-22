@@ -42,7 +42,9 @@ public class Disciplina {
 	public StringBuilder imprimindoNotas() {
 		
 		int n = 1;
+		
 		StringBuilder saida = new StringBuilder();
+		
 		for(double nota: notas) {
 			
 			saida.append("\n Nota n° " + n + ": " + nota);
@@ -56,19 +58,37 @@ public class Disciplina {
 	public String maiorNota() {
 		
 		double maiorNota = 0.0;
-		double n = 0.0;
 		
 		for(double nota: notas) {
-			n = nota;
 			
-			if(n > maiorNota) {
-				maiorNota = n;
+			if(nota > maiorNota) {
+				maiorNota = nota;
 				
 			}
 		
 		}
 		
 		return "\nA maior nota é " + maiorNota;
+	}
+	
+	public String menorNota() {
+		
+		double menorNota = 0.0;
+		
+		for(double nota : notas) {
+			
+			if(menorNota == 0.0) {
+				
+				menorNota = nota;
+				
+			}else if(nota < menorNota){
+				
+				menorNota = nota;
+				
+			}
+		}
+		
+		return "\nA menor nota é " + menorNota;
 	}
 
 	@Override
