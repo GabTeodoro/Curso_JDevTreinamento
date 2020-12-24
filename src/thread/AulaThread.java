@@ -23,7 +23,7 @@ public class AulaThread {
 					// Usando o sleep para executar o método a cada n milisegundos.
 					// Obrigatório usar um try catch.
 					try {
-						Thread.sleep(4000);
+						Thread.sleep(2000);
 					} catch (InterruptedException e) {
 						System.out.println("Causa do erro: " + e.getMessage());
 						e.printStackTrace();
@@ -35,9 +35,30 @@ public class AulaThread {
 
 		// Iniciando a Tread
 		}.start();
+		
+		new Thread() {
+
+			public void run() {
+
+				for (int pos = 0; pos < 5; pos++) {
+
+					System.out.println("Enviando comprovante para o e-mail..");
+
+					try {
+						Thread.sleep(4000);
+					} catch (InterruptedException e) {
+						System.out.println("Causa do erro: " + e.getMessage());
+						e.printStackTrace();
+					}
+
+				}
+
+			}
+			
+		}.start();
 
 		// Avisando que o precesso já está sendo executado para o usuário.
-		JOptionPane.showMessageDialog(null, "Processo já está sendo executado! \nObrigado por usar Java.");
+		JOptionPane.showMessageDialog(null, "Processo sendo executado! \nObrigado por usar Java.");
 		
 	}
 
