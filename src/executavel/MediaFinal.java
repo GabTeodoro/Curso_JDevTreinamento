@@ -19,9 +19,9 @@ import model.Secretario;
 public class MediaFinal {
 
 	public static void main(final String[] args) {
-
+		
 		try {
-
+			
 			// lerArquivo();
 
 			String login = JOptionPane.showInputDialog("Informe o login");
