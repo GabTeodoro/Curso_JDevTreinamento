@@ -2,8 +2,6 @@ package thread;
 
 import javax.swing.JOptionPane;
 
-import executavel.MediaFinal;
-
 public class AulaThread {
 
 	public static void main(String[] args) {
