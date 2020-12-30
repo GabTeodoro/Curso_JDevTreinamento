@@ -132,6 +132,7 @@ public class TelaThread extends JDialog {
 		gridBagConstraints.gridy++;
 		jButton.setPreferredSize(new Dimension(92, 25));
 
+		// Adicionando uma ação ao botão.
 		jButton.addActionListener(new ActionListener() {
 
 			@Override
